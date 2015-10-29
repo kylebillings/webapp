@@ -1,6 +1,20 @@
 /*
 * Kyle Billings
 */
+.category-row img {
+  max-width: 80px;
+  margin-top: 15px;
+}
+.category-row {
+  font-size: 1.5em;
+  border-bottom: 1px solid #e1e1e1;
+}
+.category-row .text {
+  padding: 20px 5px 20px 5px;
+}
+.category-row span {
+  font-size: .75em;
+}
 #hero {
   margin-bottom: 50px;
 }
@@ -11,8 +25,11 @@
   text-align: center;
 }
 #nav {
+  background-color: #fff;
   padding-top: 10px;
   border-bottom: 1px solid #E1E1E1;
+  position: fixed;
+
 }
 #nav ul {
   display: inline;
@@ -39,6 +56,9 @@
 #add-item {
   font-size: 3rem;
   font-family: "ChronicaUltraLight";
+}
+.round {
+  border-radius: 100%;
 }
 .left {
     float:left;
