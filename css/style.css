@@ -1,6 +1,19 @@
 /*
 * Kyle Billings
 */
+.category-grid-item {
+  cursor: pointer;
+}
+#t2 {
+  display: none;
+}
+#t3 {
+  display: none;
+}
+.back {
+  background-color: #e1e1e1;
+  cursor: pointer;
+}
 .category-row img {
   max-width: 80px;
   margin-top: 15px;
@@ -9,14 +22,35 @@
   font-size: 1.5em;
   border-bottom: 1px solid #e1e1e1;
 }
+.category-row:hover {
+  background-color: #FCFDFD;
+  border-bottom: 1px solid #44b6ff;
+}
 .category-row .text {
   padding: 20px 5px 20px 5px;
+  display: block;
+  float: left;
+  margin-left: 5%;
+}
+.category-row .image {
+  max-width: 80px;
+  display: inline;
+  float: left;
+  margin-left: 5%;
 }
 .category-row span {
   font-size: .75em;
+  display: inline;
+}
+.category-row .more {
+  float: right;
+  margin-top: 35px;
+  margin-right: 2%;
+  display: inline;
 }
 #hero {
   margin-bottom: 50px;
+  padding-top: 50px;
 }
 .spacing {
   height: 50px;
@@ -25,11 +59,11 @@
   text-align: center;
 }
 #nav {
+  z-index: 200;
   background-color: #fff;
   padding-top: 10px;
   border-bottom: 1px solid #E1E1E1;
   position: fixed;
-
 }
 #nav ul {
   display: inline;
@@ -124,4 +158,384 @@
 }
 .tt-highlight {
   color: #44b6ff;
+}
+.item-photo {
+  float: left;
+  margin: 5px;
+}
+.blue {
+  color: #44b6ff;
+}
+.editable {
+  cursor: context-menu;
+}
+
+@import url(netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.css);
+}
+@import url(http://fonts.googleapis.com/css?family=Titillium+Web:300);
+.fa-2x {
+font-size: 2em;
+}
+.fa {
+position: relative;
+display: table-cell;
+width: 60px;
+height: 36px;
+text-align: center;
+vertical-align: middle;
+font-size:20px;
+}
+
+
+.main-menu:hover,nav.main-menu.expanded {
+width:250px;
+overflow:visible;
+}
+
+.main-menu {
+background:#fcfdfd;
+border-right:1px solid #e1e1e1;
+position:fixed;
+top:0;
+bottom:0;
+padding-top: 65px;
+height:100%;
+left:0;
+width:60px;
+overflow:hidden;
+-webkit-transition:width .05s linear;
+transition:width .05s linear;
+-webkit-transform:translateZ(0) scale(1,1);
+z-index:100;
+}
+
+.main-menu>ul {
+margin:7px 0;
+}
+
+.main-menu li {
+position:relative;
+display:block;
+width:250px;
+}
+
+.main-menu li>a {
+position:relative;
+display:table;
+border-collapse:collapse;
+border-spacing:0;
+color:#999;
+font-size: 14px;
+text-decoration:none;
+-webkit-transform:translateZ(0) scale(1,1);
+-webkit-transition:all .1s linear;
+transition:all .1s linear;
+  
+}
+
+.main-menu .nav-icon {
+position:relative;
+display:table-cell;
+width:60px;
+height:36px;
+text-align:center;
+vertical-align:middle;
+font-size:18px;
+}
+
+.main-menu .nav-text {
+position:relative;
+display:table-cell;
+vertical-align:middle;
+width:190px;
+  font-family: 'Titillium Web', sans-serif;
+}
+
+.main-menu>ul.logout {
+position:absolute;
+left:0;
+bottom:0;
+}
+
+.no-touch .scrollable.hover {
+overflow-y:hidden;
+}
+
+.no-touch .scrollable.hover:hover {
+overflow-y:auto;
+overflow:visible;
+}
+
+a:hover,a:focus {
+text-decoration:none;
+}
+
+nav {
+-webkit-user-select:none;
+-moz-user-select:none;
+-ms-user-select:none;
+-o-user-select:none;
+user-select:none;
+}
+
+nav ul,nav li {
+outline:0;
+margin:0;
+padding:0;
+}
+.main-menu li:hover>a,nav.main-menu li.active>a,.dropdown-menu>li>a:hover,.dropdown-menu>li>a:focus,.dropdown-menu>.active>a,.dropdown-menu>.active>a:hover,.dropdown-menu>.active>a:focus,.no-touch .dashboard-page nav.dashboard-menu ul li:hover a,.dashboard-page nav.dashboard-menu ul li.active a {
+color:#fff;
+background-color:#5fa2db;
+}
+.area {
+float: left;
+background: #e2e2e2;
+width: 100%;
+height: 100%;
+}
+@font-face {
+  font-family: 'Titillium Web';
+  font-style: normal;
+  font-weight: 300;
+  src: local('Titillium WebLight'), local('TitilliumWeb-Light'), url(http://themes.googleusercontent.com/static/fonts/titilliumweb/v2/anMUvcNT0H1YN4FII8wpr24bNCNEoFTpS2BTjF6FB5E.woff) format('woff');
+}
+
+
+
+
+/* DELETE ME */
+#lean_overlay {
+        position: fixed;
+        z-index: 100;
+        top: 0px;
+        left: 0px;
+        height: 100%;
+        width: 100%;
+        background: #000;
+        display: none;
+}
+
+.popupContainer {
+        position: absolute;
+        width: 330px;
+        height: auto;
+        left: 45%;
+        top: 60px;
+        background: #FFF;
+}
+
+#modal_trigger {
+        margin: 40px auto;
+        width: 200px;
+        display: block;
+        border: 1px solid #DDD;
+        border-radius: 4px;
+}
+
+.btn {
+        padding: 10px 20px;
+        background: #F4F4F2;
+}
+
+.btn_red {
+        background: #ED6347;
+        color: #FFF;
+}
+
+.btn:hover {
+        background: #E4E4E2;
+}
+
+.btn_red:hover {
+        background: #C12B05;
+}
+
+a.btn {
+        color: #666;
+        text-align: center;
+        text-decoration: none;
+}
+
+a.btn_red {
+        color: #FFF;
+}
+
+.one_half {
+        width: 50%;
+        display: block;
+        float: left;
+}
+
+.one_half.last {
+        width: 45%;
+        margin-left: 5%;
+}
+/* Popup Styles*/
+
+.popupHeader {
+        font-size: 16px;
+        text-transform: uppercase;
+}
+
+.popupHeader {
+        background: #F4F4F2;
+        position: relative;
+        padding: 10px 20px;
+        border-bottom: 1px solid #DDD;
+        font-weight: bold;
+}
+
+.popupHeader .modal_close {
+        position: absolute;
+        right: 0;
+        top: 0;
+        padding: 10px 15px;
+        background: #E4E4E2;
+        cursor: pointer;
+        color: #aaa;
+        font-size: 16px;
+}
+
+.popupBody {
+        padding: 20px;
+}
+/* Social Login Form */
+
+.social_login {}
+
+.social_login .social_box {
+        display: block;
+        clear: both;
+        padding: 10px;
+        margin-bottom: 10px;
+        background: #F4F4F2;
+        overflow: hidden;
+}
+
+.social_login .icon {
+        display: block;
+        width: 10px;
+        padding: 5px 10px;
+        margin-right: 10px;
+        float: left;
+        color: #FFF;
+        font-size: 16px;
+        text-align: center;
+}
+
+.social_login .fb .icon {
+        background: #3B5998;
+}
+
+.social_login .google .icon {
+        background: #DD4B39;
+}
+
+.social_login .icon_title {
+        display: block;
+        padding: 5px 0;
+        float: left;
+        font-weight: bold;
+        font-size: 16px;
+        color: #777;
+}
+
+.social_login .social_box:hover {
+        background: #E4E4E2;
+}
+
+.centeredText {
+        text-align: center;
+        margin: 20px 0;
+        clear: both;
+        overflow: hidden;
+        text-transform: uppercase;
+}
+
+.action_btns {
+        clear: both;
+        overflow: hidden;
+}
+
+.action_btns a {
+        display: block;
+}
+/* User Login Form */
+
+.user_login {
+        display: none;
+}
+
+.user_login label {
+        display: block;
+        margin-bottom: 5px;
+}
+
+.user_login input[type="text"],
+.user_login input[type="email"],
+.user_login input[type="password"] {
+        display: block;
+        width: 90%;
+        padding: 10px;
+        border: 1px solid #DDD;
+        color: #666;
+}
+
+.user_login input[type="checkbox"] {
+        float: left;
+        margin-right: 5px;
+}
+
+.user_login input[type="checkbox"]+label {
+        float: left;
+}
+
+.user_login .checkbox {
+        margin-bottom: 10px;
+        clear: both;
+        overflow: hidden;
+}
+
+.forgot_password {
+        display: block;
+        margin: 20px 0 10px;
+        clear: both;
+        overflow: hidden;
+        text-decoration: none;
+        color: #ED6347;
+}
+/* User Register Form */
+
+.user_register {
+        display: none;
+}
+
+.user_register label {
+        display: block;
+        margin-bottom: 5px;
+}
+
+.user_register input[type="text"],
+.user_register input[type="email"],
+.user_register input[type="password"] {
+        display: block;
+        width: 90%;
+        padding: 10px;
+        border: 1px solid #DDD;
+        color: #666;
+}
+
+.user_register input[type="checkbox"] {
+        float: left;
+        margin-right: 5px;
+}
+
+.user_register input[type="checkbox"]+label {
+        float: left;
+}
+
+.user_register .checkbox {
+        margin-bottom: 10px;
+        clear: both;
+        overflow: hidden;
 }

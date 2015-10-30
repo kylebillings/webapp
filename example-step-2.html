@@ -19,6 +19,9 @@
   <link rel="stylesheet" href="css/skeleton.css">
   <link rel="stylesheet" href="css/style.css">
 
+   <!-- TEMPORARY -->
+  <link href="http://maxcdn.bootstrapcdn.com/font-awesome/4.1.0/css/font-awesome.min.css" rel="stylesheet">
+
   <!-- Favicon
   –––––––––––––––––––––––––––––––––––––––––––––––––– -->
   <link rel="icon" type="image/png" href="images/favicon.png">
@@ -47,6 +50,64 @@
       </li>
     </ul>
   </div>
+
+<div id="sidebar">
+<div class="area"></div>
+    <nav class="main-menu">
+            <ul>
+                <li>
+                    <a href="example-step-2.html">
+                        <i class="fa fa-home fa-2x blue"></i>
+                        <span class="nav-text">
+                            Inventory <span class="blue">1</span>
+                        </span>
+                    </a>
+                  
+                </li>
+                <li class="has-subnav">
+                    <a href="#">
+                        <i class="fa fa-laptop fa-2x"></i>
+                        <span class="nav-text">
+                            Shipping
+                        </span>
+                    </a>
+                    
+                </li>
+                <li class="has-subnav">
+                    <a href="#">
+                       <i class="fa fa-list fa-2x"></i>
+                        <span class="nav-text">
+                            Tracking
+                        </span>
+                    </a>
+                    
+                </li>
+                <li class="has-subnav">
+                    <a href="#">
+                       <i class="fa fa-folder-open fa-2x"></i>
+                        <span class="nav-text">
+                            Cashout
+                        </span>
+                    </a>
+                   
+                </li>
+                
+            </ul>
+
+            <ul class="logout">
+                <li>
+                   <a href="#">
+                         <i class="fa fa-power-off fa-2x"></i>
+                        <span class="nav-text">
+                            Help
+                        </span>
+                    </a>
+                </li>  
+            </ul>
+        </nav>
+</div>
+
+
   <!--<div id="hero" class="u-full-width" style="height: 200px; overflow: hidden;">
     <img src="images/white-gone-team-3.jpg" alt="" class="u-full-width">
   </div>-->
@@ -56,26 +117,64 @@
     <div class="container">
       <div class="row">
         <div class="twelve columns center">
-          <h3>Sell your electronics effortlessly.</h3><br>
+          <h3>You've added your first item!</h3><br>
         </div>
       </div>
-      <div class="row">
-        <div class="four columns center">
-          <object data="images/box.svg" height="45px" type="">
-            <img alt="" src="images/box.png">
-          </object>
+
+        <div class="category-row row" onclick="show('t3'), hide('t2')">
+          <div class="twelve columns">
+            <div class="image">
+              <img src="categories/sub-categories/cameras.png" alt="" class="round u-max-full-width"/>
+            </div>
+            <div class="text">
+              Category Title<br>
+              <span>Price Estimate</span>
+            </div>
+            <div class="more">
+            </div>
+          </div>
         </div>
-        <div class="four columns center">
-          <object data="images/inspected.svg" height="42px" type="">
-            <img alt="" src="images/inspected.png">
-          </object> 
+
+        <div class="category-row row" onclick="show('t3'), hide('t2')">
+          <div class="twelve columns">
+            <div class="image">
+              <object data="images/empty-circle-gray.svg" height="50px" type="">
+                <img alt="" src="images/empty-circle-gray.png">
+              </object>
+            </div>
+            <div class="text">
+              Add More Items<br>
+              <span></span>
+            </div>
+            <div class="more">
+            </div>
+          </div>
         </div>
-        <div class="four columns center">
-          <object data="images/sold.svg" height="45px" type="">
-            <img alt="" src="images/sold.png">
-          </object>
+
+        <div class="category-row row" onclick="show('t3'), hide('t2')">
+          <div class="twelve columns">
+            <div class="image">
+              <object data="images/empty-circle-gray.svg" height="50px" type="">
+                <img alt="" src="images/empty-circle-gray.png">
+              </object>
+            </div>
+            <div class="text">
+              Add More Items<br>
+              <span></span>
+            </div>
+            <div class="more">
+            </div>
+          </div>
         </div>
-      </div>
+
+        <div class="spacing"></div>
+
+        <div class="container">
+          <div class="row center">
+            <a href="example-step-3.html"><button class="button-primary">Schedule Pickup</button></a>
+          </div>
+        </div>
+
     </div>
     <div class="container">
       <hr>
