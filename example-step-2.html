@@ -114,7 +114,8 @@
   <section id="toast">
     <div class="spacing"></div>
     <div class="spacing"></div>
-    <div class="container">
+
+    <div id="inventory" class="container">
       <div class="row">
         <div class="twelve columns center">
           <h3>You've added your first item!</h3><br>
@@ -171,11 +172,45 @@
 
         <div class="container">
           <div class="row center">
-            <a href="example-step-3.html"><button class="button-primary">Schedule Pickup</button></a>
+            <button onclick="show('address-schedule'), hide('inventory')" class="button-primary">Schedule Pickup</button>
           </div>
         </div>
-
     </div>
+
+
+        <!-- Inputting Scheduling or Address Information -->
+        <div id="address-schedule" class="container">
+          <div class="row">
+            <div class="twelve columns center">
+              <h2>Schedule Your In-home pickup</h2>
+            </div>
+          </div>
+          <form>
+            <div class="row">
+              <div class="six columns">
+                <label for="exampleEmailInput">Address</label>
+                <input class="u-full-width" type="text" placeholder="819 Brussels Street, San Francisco CA 94134" id="exampleEmailInput">
+              </div>
+              <div class="six columns">
+                <label for="exampleRecipientInput">Time Window</label>
+                <select class="u-full-width" id="exampleRecipientInput">
+                  <option value="Option 1">Morning – 9am to 12pm</option>
+                  <option value="Option 2">Afternoon – 12pm to 2pm</option>
+                  <option value="Option 3">Evening – 2pm to 6pm</option>
+                </select>
+              </div>
+            </div>
+            <label class="example-send-yourself-copy">
+              <input type="checkbox">
+              <span class="label-body">Send a copy to yourself</span>
+            </label>
+            
+            <!-- ACTUAL SUBMIT <input class="button-primary" type="submit" value="Submit">-->
+          </form>
+          <div class="row center">
+          <a href="example-step-3.html"><button class="button-primary">Confirm Pickup</button></a>
+          </div>
+        </div>
     <div class="container">
       <hr>
     </div>
