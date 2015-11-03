@@ -57,18 +57,18 @@
             <ul>
                 <li>
                     <a href="example-step-2.html">
-                        <i class="fa fa-home fa-2x blue"></i>
+                        <i class="fa fa-home fa-2x"></i>
                         <span class="nav-text">
-                            Inventory <span class="blue">1</span>
+                            Inventory
                         </span>
                     </a>
                   
                 </li>
                 <li class="has-subnav">
                     <a href="#">
-                        <i class="fa fa-laptop fa-2x"></i>
+                        <i class="fa fa-laptop fa-2x blue"></i>
                         <span class="nav-text">
-                            Shipping
+                            Shipping <span class="blue">1</span>
                         </span>
                     </a>
                     
@@ -114,97 +114,45 @@
   <section id="toast">
     <div class="spacing"></div>
     <div class="spacing"></div>
-
-    <div id="inventory" class="container">
+    <div class="container">
       <div class="row">
-        <div class="twelve columns center">
-          <h1 class="green">$330</h1>
-          <p class="gray">Total Inventory Value<i style="margin-left: 10px;" class="fa fa-question-circle"></i></p>
-        </div>
-      </div>
-      <div class="container">
-        <div class="row center">
-          <button onclick="show('address-schedule'), hide('inventory')" class="button-primary">Schedule Pickup</button>
-        </div>
-      </div>
-      <div class="spacing"></div>
-        <p class="smaller gray">Inventory</p>
-
-        <div class="category-row row">
-          <div class="twelve columns">
-            <div class="image">
-              <img src="categories/sub-categories/cameras.png" alt="" class="round u-max-full-width"/>
-            </div>
-            <div class="text">
-              <h4 class="item-title">iPhone 6s</h4>
-              <span class="price green smaller"><p>$210</p></span>
-              <span class="answers gray smaller"><p>AT&T | Groso | Boludo | Che · 2 Hours Ago</p></span>
-            </div>
-            <div class="more">
-              <div style="display: inline-block; width: 30px; height: 30px;"><i class="fa fa-pencil-square-o"></i></div>
-              <div style="display: inline-block; width: 30px; height: 30px;"><i class="fa fa-trash-o"></i></div>
-            </div>
+        <div class="ten columns offset-by-one">
+          <div class="center">
+          <h2>Follow Your Shipment</h2>
+          <img src="categories/sub-categories/cameras.png" alt="" class="photo-icon">
+          <img src="categories/sub-categories/laptops.png" alt="" class="photo-icon">
+          <img src="categories/sub-categories/phones.png" alt="" class="photo-icon">
+          <img src="categories/sub-categories/cameras.png" alt="" class="photo-icon">
+          <img src="categories/sub-categories/laptops.png" alt="" class="photo-icon">
+          <img src="categories/sub-categories/phones.png" alt="" class="photo-icon">
+          <p><span class="gray">Six Items Shipped</span></p>
+          </div>
+            <ul class="timeline">
+              <li class="timeline-milestone is-completed timeline-start">
+                <div class="timeline-action">
+                  <p class="title">Items Shipped to Inspection Facility</p>
+                  <span class="date gray">September 25th, 2015</span>
+                </div>
+              </li>
+              <li class="timeline-milestone is-current">
+                <div class="timeline-action">
+                  <p class="title gray">Items Arrived at Inspection Facility</p>
+                  <span class="date blue">Estimated Completion: September 28th, 2015</span>
+                </div>
+              </li>
+              <li class="timeline-milestone is-current timeline-end">
+                <div class="timeline-action">
+                  <p class="title gray">Items Inspected and Prepared for Sale</p>
+                  <span class="date blue">Estimated Completion: September 30th, 2015</span>
+                </div>
+              </li>
+            </ul>
           </div>
         </div>
-
-        <div class="category-row row">
-          <div class="twelve columns">
-            <div class="image">
-              <img src="categories/sub-categories/cameras.png" alt="" class="round u-max-full-width"/>
-            </div>
-            <div class="text">
-              <h4 class="item-title">Samsung LED Monitor</h4>
-              <span class="price green smaller"><p>$110</p></span>
-              <span class="answers gray smaller"><p>A728FX | Used | · Six Days Ago</p></span>
-            </div>
-            <div class="more">
-              <div style="display: inline-block; width: 30px; height: 30px;"><i class="fa fa-pencil-square-o"></i></div>
-              <div style="display: inline-block; width: 30px; height: 30px;"><i class="fa fa-trash-o"></i></div>
-            </div>
-          </div>
-        </div>
-
     </div>
-
-
-        <!-- Inputting Scheduling or Address Information -->
-        <div id="address-schedule" class="container">
-          <div class="row">
-            <div class="twelve columns center">
-              <h2>Schedule Your In-home pickup</h2>
-              <img src="categories/sub-categories/cameras.png" alt="" class="photo-icon">
-              <img src="categories/sub-categories/laptops.png" alt="" class="photo-icon">
-              <p><span class="gray">Shipping Two Items</span></p>
-            </div>
-          </div>
-          <form>
-            <div class="row">
-              <div class="six columns">
-                <label for="exampleEmailInput">Address</label>
-                <input class="u-full-width" type="text" placeholder="819 Brussels Street, San Francisco CA 94134" id="exampleEmailInput">
-              </div>
-              <div class="six columns">
-                <label for="exampleRecipientInput">Time Window</label>
-                <select class="u-full-width" id="exampleRecipientInput">
-                  <option value="Option 1">Morning – 9am to 12pm</option>
-                  <option value="Option 2">Afternoon – 12pm to 2pm</option>
-                  <option value="Option 3">Evening – 2pm to 6pm</option>
-                </select>
-              </div>
-            </div>
-            <label class="example-send-yourself-copy">
-              <input type="checkbox">
-              <span class="label-body">Send a copy to yourself</span>
-            </label>
-            
-            <!-- ACTUAL SUBMIT <input class="button-primary" type="submit" value="Submit">-->
-          </form>
-          <div class="row center">
-          <a href="example-step-3.html"><button class="button-primary">Confirm Pickup</button></a>
-          </div>
-          <hr>
-        </div>
-<div class="spacing"></div>
+    <div class="container">
+      <hr>
+    </div>
   </section>
   <section id="add-item">
     <div class="container">
@@ -213,7 +161,7 @@
           <object class="search-icon" data="images/search.svg" height="26px" type="">
             <img class="search-icon" alt="" src="images/search.png">
           </object>
-          <input type="text" class="search typeahead" placeholder="What are you selling?"/>
+          <input type="text" class="search typeahead" placeholder="Feel free to sell some more!" />
           <button class="button-primary">Enter</button>
         </div>
       </div>
@@ -468,7 +416,6 @@
 
       </div> <!-- Container -->
     </div> <!-- End Subcategory Section 2 -->
-    <div class="spacing"></div>
   </section> <!-- End Category Section -->
 <!-- End Document
   –––––––––––––––––––––––––––––––––––––––––––––––––– -->
