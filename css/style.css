@@ -196,9 +196,6 @@
 .category-row {
   border-bottom: 1px solid #e1e1e1;
 }
-.category-row:hover {
-  border-bottom: 1px solid #44b6ff;
-}
 .category-row .text {
   padding: 15px 5px 15px 5px;
   display: block;
