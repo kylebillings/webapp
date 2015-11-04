@@ -179,6 +179,14 @@
 .category-grid-item {
   cursor: pointer;
 }
+.category-grid-item img {
+  opacity: 1;
+  -webkit-transition: .3s ease-in-out;
+  transition: .3s ease-in-out;
+}
+.category-grid-item img:hover {
+  opacity: .5;
+}
 #t2 {
   display: none;
 }
@@ -251,6 +259,13 @@
 }
 #nav ul {
   display: inline;
+}
+#nav .login {
+  padding: 0px;
+  padding-right: 10px;
+}
+#nav button {
+  margin-bottom: 0px;
 }
 #nav li {
   text-decoration: none;
@@ -327,12 +342,11 @@
   font-family: "ChronicaBook";
   text-align: left;
     width: 422px;
-    margin-top: 12px;
+    margin-top: 5px;
     padding: 8px 0;
     background-color: #fff;
-    border: 1px solid #ccc;
-    border: 1px solid rgba(0, 0, 0, 0.2);
-    border-radius: 8px;
+    border: 1px solid #e1e1e1;
+    border-radius: 4px;
     box-shadow: 0 5px 10px rgba(0,0,0,.2);
 }
 
@@ -342,12 +356,11 @@
     line-height: 24px;
 }
 .tt-suggestion:hover {
-  background-color: #e1e1e1;
+  opacity: .5;
   cursor: pointer;
 }
 .tt-suggestion.tt-cursor { /* UPDATE: newer versions use .tt-suggestion.tt-cursor */
-    color: #fff;
-    background-color: #0097cf;
+    background-color: #F6F6F6;
 }
 
 .tt-suggestion p {
@@ -417,6 +430,7 @@ margin:7px 0;
 position:relative;
 display:block;
 width:250px;
+margin-bottom: 20px;
 }
 
 .main-menu li>a {
@@ -517,6 +531,21 @@ height: 100%;
 #address-schedule {
   display: none;
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
