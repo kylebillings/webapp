@@ -456,16 +456,12 @@ padding:0;
   margin-bottom: 10px;
   
 }
-.main-menu > ul > li > a {
-  color: #546979 !important;
+.main-menu > ul > li a {
+  color: #546979;
   text-decoration: none;
   vertical-align: center;
-  font-family: "Chronica" !important;
-  font-size: 12px !important;
-}
-
-.main-menu > ul > li > a:hover {
-  color: #44b6ff;
+  font-family: "Chronica";
+  font-size: 12px;
 }
 .main-menu > ul > li:active {
 }
@@ -481,9 +477,11 @@ padding:0;
   width: 200px;
   text-align: left;
   padding: 5px 5px 15px 25px;
-  border-bottom: 1px solid #e1e1e1;
+  border-bottom: 1px solid #f4f4f4;
 }
-
+.main-menu > ul > li > div:nth-child(2):hover a {
+  color: #44b6ff;
+}
 
 
 
