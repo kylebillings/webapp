@@ -433,7 +433,17 @@ padding:0;
   -moz-box-shadow: 0px 2px 10px -1px rgba(199,202,203,.5);
   box-shadow: 0px 2px 10px -1px rgba(199,202,203,.5);
 }
-
+#nav-search input {
+  font-size: .75em;
+  font-family: "Chronica";
+}
+#nav-search div {
+  padding: 0px;
+  border: none;
+}
+#nav-search {
+  margin-bottom: 0px;
+}
 .main-menu:hover {
   width: 300px;
 }
@@ -483,7 +493,14 @@ padding:0;
   color: #44b6ff;
 }
 
-
+#footer {
+  width: 100%;
+  position: absolute;
+  margin-bottom: 0px;
+  padding-top: 50px;
+  background-color: #fff;
+  color: #C7CACB;
+}
 
 
 
