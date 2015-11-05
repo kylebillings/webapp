@@ -209,6 +209,8 @@
   display: block;
   float: left;
   margin-left: 5%;
+  white-space: nowrap;
+  overflow: hidden;
 }
 .text h4 {
   margin-bottom: 2px;
@@ -236,6 +238,24 @@
 }
 .category-row:hover .more {
   display: inline-block;
+}
+@media (max-width: 600px) {
+  .category-row .text {
+    max-width: 200px;
+    overflow: hidden;
+    margin-left: 5px;
+  }
+}
+@media (max-width: 600px) {
+  .category-row img {
+    width: 45px;
+  }
+  .category-row .image {
+    margin-left: 5px;
+  }
+  .category-row .more {
+    display: inline;
+  }
 }
 #hero {
   margin-bottom: 50px;
@@ -369,6 +389,18 @@
 .tt-highlight {
   color: #44b6ff;
 }
+@media (max-width: 600px) {
+  .tt-menu {
+    display: none !important;
+  }
+  .tt-input {
+    width: 200px;
+  }
+  .search-icon {
+    margin-top: 10px;
+  }
+}
+
 .item-photo {
   float: left;
   margin: 5px;

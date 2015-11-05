@@ -444,8 +444,8 @@ there.
 */
 
 @media (max-width: 600px) {
-  .container {
-    margin-left: 60px;
+  .tt-menu {
+    display: none !important;
   }
 }
 
