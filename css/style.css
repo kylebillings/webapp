@@ -467,6 +467,16 @@ padding:0;
   -moz-box-shadow: 0px 2px 10px -1px rgba(199,202,203,.5);
   box-shadow: 0px 2px 10px -1px rgba(199,202,203,.5);
 }
+.snapshot {
+  display: inline;
+  float: right;
+  font-size: .75em;
+  font-family: "Chronica";
+  vertical-align: center;
+}
+.snapshot > .photo-icon {
+  width: 20px;
+}
 #nav-search input {
   font-size: .75em;
   font-family: "Chronica";
