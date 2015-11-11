@@ -53,6 +53,10 @@
   display: none;
   color: #546979;
 }
+#signup-form {
+  display: none;
+  color: #546979;
+}
 .timeline {
   list-style: none;
   margin: 25px 0 22px;
