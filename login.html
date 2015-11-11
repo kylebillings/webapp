@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+  <!-- Basic Page Needs
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+  <meta charset="utf-8">
+  <title>Gone | On Demand Selling</title>
+  <meta name="description" content="">
+  <meta name="author" content="">
+
+  <!-- Mobile Specific Metas
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <!-- CSS
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+  <link rel="stylesheet" href="css/normalize.css">
+  <link rel="stylesheet" href="css/skeleton.css">
+  <link rel="stylesheet" href="css/style.css">
+
+  <!-- Favicon
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+  <link rel="icon" type="image/png" href="images/favicon.png">
+
+</head>
+<body>
+<div id="login" class="blue-background center">
+  <div id="login-container" class="animated fadeInUp">
+    <h1>Gone</h1>
+    <h3>Selling On Demand</h3>
+    <div id="login-buttons">
+      <button class="btn-white" onclick="show('login-form'), hide('login-buttons')">Email Login</button>
+      <button class="btn-facebook">Login With Facebook</button>
+    </div>
+    <div id="login-form" class="container animated fadeInLeft">
+      <form>
+      <div class="row">
+        <div class="six columns offset-by-three">
+          <input class="u-full-width" type="email" placeholder="example@gmail.com" id="login-email">
+          <input class="u-full-width" type="password" placeholder="Password" id="login-password">
+        </div>
+      </div>
+      <input style="background-color: #fff; color: #546979; border: none;" type="submit" value="Submit">
+    </form>
+    </div>
+  </div>
+</div>
+</body>
+<!-- JS -->
+<script language="javascript" type="text/javascript" src="js/jquery.min.js"></script>
+<script src="js/bloodhound.min.js"></script>
+<script src="js/typeahead.jquery.min.js"></script>
+<script src="js/typeahead.bundle.min.js"></script>
+<script src="js/items.js"></script>
+<script src="js/main.js"></script>
+<!-- Prototype JS -->
+<script>
+function show(target) {
+    document.getElementById(target).style.display = 'block';
+}
+
+function hide(target) {
+    document.getElementById(target).style.display = 'none';
+}
+</script>
+</html>

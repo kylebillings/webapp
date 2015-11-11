@@ -1,6 +1,7 @@
 /*
 * Kyle Billings
 */
+
 .photo-icon {
   width: 30px;
   border: 2px solid #fff;
@@ -11,6 +12,7 @@
 .gray {
   color: #C7CACB;
 }
+
 .blue {
   color: #44b6ff;
 }
@@ -19,6 +21,37 @@
 }
 .green {
   color: #72D627;
+}
+.blue-background {
+  background-color: #44b6ff;
+  color: #fff;
+}
+#login {
+  height: 100%;
+  width: 100%;
+  position: absolute;
+}
+#login-container {
+  margin-top: 20%;
+}
+#login-container button {
+  border: none;
+  background-color: #fff;
+  color: #546979;
+}
+#login-container button:hover {
+  background-color: #e1e1e1;
+}
+#login-container button.btn-facebook {
+  color: #fff;
+  background-color: #3B5998;
+}
+#login-container button.btn-facebook:hover {
+  background-color: #22407F;
+}
+#login-form {
+  display: none;
+  color: #546979;
 }
 .timeline {
   list-style: none;
@@ -205,7 +238,7 @@
   border-bottom: 1px solid #e1e1e1;
 }
 .category-row .text {
-  padding: 15px 5px 15px 5px;
+  padding: 15px 5px 10px 5px;
   display: block;
   float: left;
   margin-left: 5%;
@@ -245,10 +278,18 @@
     overflow: hidden;
     margin-left: 5px;
   }
+  .category-row .text h4 {
+    font-size: 1em;
+    font-family: "ChronicaBook";
+  }
 }
 @media (max-width: 600px) {
   .category-row .image {
     margin-left: 5px;
+  }
+  .category-row .image img {
+    width: 45px;
+    display: none;
   }
   .category-row .more {
     display: inline;
@@ -573,250 +614,87 @@ padding:0;
   color: #C7CACB;
 }
 
+.animated {
+  -webkit-animation-duration: 1s;
+  animation-duration: 1s;
+  -webkit-animation-fill-mode: both;
+  animation-fill-mode: both;
+}
+@-webkit-keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
 
-
-
-
-
-
-
-
-
-
-
-/* DELETE ME */
-#lean_overlay {
-        position: fixed;
-        z-index: 100;
-        top: 0px;
-        left: 0px;
-        height: 100%;
-        width: 100%;
-        background: #000;
-        display: none;
+  to {
+    opacity: 1;
+  }
 }
 
-.popupContainer {
-        position: absolute;
-        width: 330px;
-        height: auto;
-        left: 45%;
-        top: 60px;
-        background: #FFF;
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+
+  to {
+    opacity: 1;
+  }
 }
 
-#modal_trigger {
-        margin: 40px auto;
-        width: 200px;
-        display: block;
-        border: 1px solid #DDD;
-        border-radius: 4px;
+.fadeIn {
+  -webkit-animation-name: fadeIn;
+  animation-name: fadeIn;
+}
+@keyframes fadeInLeft {
+  from {
+    opacity: 0;
+    -webkit-transform: translate3d(-10%, 0, 0);
+    transform: translate3d(-10%, 0, 0);
+  }
+
+  to {
+    opacity: 1;
+    -webkit-transform: none;
+    transform: none;
+  }
 }
 
-.btn {
-        padding: 10px 20px;
-        background: #F4F4F2;
+.fadeInLeft {
+  -webkit-animation-name: fadeInLeft;
+  animation-name: fadeInLeft;
+}
+@keyframes fadeInRight {
+  from {
+    opacity: 0;
+    -webkit-transform: translate3d(25%, 0, 0);
+    transform: translate3d(25%, 0, 0);
+  }
+
+  to {
+    opacity: 1;
+    -webkit-transform: none;
+    transform: none;
+  }
 }
 
-.btn_red {
-        background: #ED6347;
-        color: #FFF;
+.fadeInRight {
+  -webkit-animation-name: fadeInRight;
+  animation-name: fadeInRight;
+}
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    -webkit-transform: translate3d(0, 25%, 0);
+    transform: translate3d(0, 25%, 0);
+  }
+
+  to {
+    opacity: 1;
+    -webkit-transform: none;
+    transform: none;
+  }
 }
 
-.btn:hover {
-        background: #E4E4E2;
-}
-
-.btn_red:hover {
-        background: #C12B05;
-}
-
-a.btn {
-        color: #666;
-        text-align: center;
-        text-decoration: none;
-}
-
-a.btn_red {
-        color: #FFF;
-}
-
-.one_half {
-        width: 50%;
-        display: block;
-        float: left;
-}
-
-.one_half.last {
-        width: 45%;
-        margin-left: 5%;
-}
-/* Popup Styles*/
-
-.popupHeader {
-        font-size: 16px;
-        text-transform: uppercase;
-}
-
-.popupHeader {
-        background: #F4F4F2;
-        position: relative;
-        padding: 10px 20px;
-        border-bottom: 1px solid #DDD;
-        font-weight: bold;
-}
-
-.popupHeader .modal_close {
-        position: absolute;
-        right: 0;
-        top: 0;
-        padding: 10px 15px;
-        background: #E4E4E2;
-        cursor: pointer;
-        color: #aaa;
-        font-size: 16px;
-}
-
-.popupBody {
-        padding: 20px;
-}
-/* Social Login Form */
-
-.social_login {}
-
-.social_login .social_box {
-        display: block;
-        clear: both;
-        padding: 10px;
-        margin-bottom: 10px;
-        background: #F4F4F2;
-        overflow: hidden;
-}
-
-.social_login .icon {
-        display: block;
-        width: 10px;
-        padding: 5px 10px;
-        margin-right: 10px;
-        float: left;
-        color: #FFF;
-        font-size: 16px;
-        text-align: center;
-}
-
-.social_login .fb .icon {
-        background: #3B5998;
-}
-
-.social_login .google .icon {
-        background: #DD4B39;
-}
-
-.social_login .icon_title {
-        display: block;
-        padding: 5px 0;
-        float: left;
-        font-weight: bold;
-        font-size: 16px;
-        color: #777;
-}
-
-.social_login .social_box:hover {
-        background: #E4E4E2;
-}
-
-.centeredText {
-        text-align: center;
-        margin: 20px 0;
-        clear: both;
-        overflow: hidden;
-        text-transform: uppercase;
-}
-
-.action_btns {
-        clear: both;
-        overflow: hidden;
-}
-
-.action_btns a {
-        display: block;
-}
-/* User Login Form */
-
-.user_login {
-        display: none;
-}
-
-.user_login label {
-        display: block;
-        margin-bottom: 5px;
-}
-
-.user_login input[type="text"],
-.user_login input[type="email"],
-.user_login input[type="password"] {
-        display: block;
-        width: 90%;
-        padding: 10px;
-        border: 1px solid #DDD;
-        color: #666;
-}
-
-.user_login input[type="checkbox"] {
-        float: left;
-        margin-right: 5px;
-}
-
-.user_login input[type="checkbox"]+label {
-        float: left;
-}
-
-.user_login .checkbox {
-        margin-bottom: 10px;
-        clear: both;
-        overflow: hidden;
-}
-
-.forgot_password {
-        display: block;
-        margin: 20px 0 10px;
-        clear: both;
-        overflow: hidden;
-        text-decoration: none;
-        color: #ED6347;
-}
-/* User Register Form */
-
-.user_register {
-        display: none;
-}
-
-.user_register label {
-        display: block;
-        margin-bottom: 5px;
-}
-
-.user_register input[type="text"],
-.user_register input[type="email"],
-.user_register input[type="password"] {
-        display: block;
-        width: 90%;
-        padding: 10px;
-        border: 1px solid #DDD;
-        color: #666;
-}
-
-.user_register input[type="checkbox"] {
-        float: left;
-        margin-right: 5px;
-}
-
-.user_register input[type="checkbox"]+label {
-        float: left;
-}
-
-.user_register .checkbox {
-        margin-bottom: 10px;
-        clear: both;
-        overflow: hidden;
+.fadeInUp {
+  -webkit-animation-name: fadeInUp;
+  animation-name: fadeInUp;
 }
