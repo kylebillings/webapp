@@ -584,6 +584,7 @@ padding:0;
   }
 }
 #mobile-menu {
+  display: none;
   position: absolute;
   width: 100%;
   margin-top: 65px;
