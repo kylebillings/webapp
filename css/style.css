@@ -15,7 +15,7 @@
   width: 80%;
   height: 100%;
   background: #546979;
-  font-family: "ChronicaLight";
+  font-family: "Chronica";
   transition: transform 0.5s;
 }
 #mobile-menu #toggle {
@@ -290,8 +290,13 @@
   display: none;
 }
 .back {
-  background-color: #e1e1e1;
+  color: #44b6ff;
   cursor: pointer;
+}
+.back p {
+  display: inline;
+  height: 20px;
+  line-height: 20px;
 }
 .category-row img {
   max-width: 70px;
