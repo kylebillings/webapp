@@ -25,18 +25,25 @@
 
 </head>
 <body>
-
   <!-- Primary Page Layout
   –––––––––––––––––––––––––––––––––––––––––––––––––– -->
   <div id="nav" class="u-full-width">
   <object data="images/gone-g.svg" height="40px" type="">
     <img alt="" src="images/gone-g.png">
   </object>
+    <input type="checkbox" id="nav-toggle">
+    <nav id="mobile-menu">
+      <label for="nav-toggle" id="toggle"></label>
+      <ul>
+        <li><a href="#">Search</a></li>
+        <li><a href="#">Info</a></li>
+        <li><a href="#">Feed</a></li>
+        <li><a href="#">Contact</a></li>
+      </ul>
+    </nav>
     <ul>
       <li class="u-pull-right login">
-        <a href="#">
-          <button>Login</button>
-        </a>
+        <button onclick="">Login</button>
       </li>
     </ul>
   </div>
@@ -84,7 +91,7 @@
           <object class="search-icon" data="images/search.svg" height="26px" type="">
             <img class="search-icon" alt="" src="images/search.png">
           </object>
-          <input type="text" class="search typeahead" placeholder="What are you selling?" autofocus/>
+          <input type="text" class="search typeahead" placeholder="What are you selling?"/>
           <button class="button-primary">Enter</button>
         </div>
       </div>
